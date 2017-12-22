@@ -6,6 +6,8 @@ public class Aluno {
 	
 	public Aluno() {
 		super();
+		nome = "";
+		matricula = "";
 	}
 	
 	public String getNome() {
@@ -20,6 +22,13 @@ public class Aluno {
 	public void setMatricula(String matricula) {
 		this.matricula = matricula;
 	}
+
+	@Override
+	public String toString() {
+		return "Aluno: nome = " + nome + ", matricula = " + matricula;
+	}
+	
+	
 	
 	
 }
