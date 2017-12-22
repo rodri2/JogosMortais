@@ -22,7 +22,9 @@ public class Escola {
 	}
 
 	public void setNome(String nome) {
-		this.nome = nome;
+		if (nome != null) {
+			this.nome = nome;
+		}
 	}
 
 	public List<Curso> getCursos() {
@@ -30,7 +32,9 @@ public class Escola {
 	}
 
 	public void setCursos(List<Curso> cursos) {
-		this.cursos = cursos;
+		if (cursos != null) {
+			this.cursos = cursos;
+		}
 	}
 
 	public List<Professor> getProfessores() {
@@ -38,7 +42,15 @@ public class Escola {
 	}
 
 	public void setProfessores(List<Professor> professores) {
-		this.professores = professores;
+		if (professores != null) {
+			this.professores = professores;
+		}
+		
+	}
+
+	@Override
+	public String toString() {
+		return "Escola: nome= " + nome + ", cursos= " + cursos + ", professores= " + professores;
 	}
 	
 	
