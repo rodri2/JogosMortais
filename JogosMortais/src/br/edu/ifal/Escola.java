@@ -16,6 +16,30 @@ public class Escola {
 		professores = new ArrayList<>();
 		
 	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public List<Curso> getCursos() {
+		return cursos;
+	}
+
+	public void setCursos(List<Curso> cursos) {
+		this.cursos = cursos;
+	}
+
+	public List<Professor> getProfessores() {
+		return professores;
+	}
+
+	public void setProfessores(List<Professor> professores) {
+		this.professores = professores;
+	}
 	
 	
 }
